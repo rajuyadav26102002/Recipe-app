@@ -3,8 +3,8 @@ import { Search } from "lucide-react";
 import RecipeCard from "../components/RecipeCard";
 import { getRandomColor } from "../lib/utils";
 
-const APP_ID = "d59454e5"
-const APP_KEY = "a2a3e4cbc87493f2883665548bf82a3e";
+const APP_ID = import.meta.env.VITE_APP_ID
+const APP_KEY = import.meta.env.VITE_APP_KEY;
 
 const HomePage = () => {
 	const [recipes, setRecipes] = useState([]);
@@ -60,7 +60,7 @@ const HomePage = () => {
 						))}
 
 					{loading &&
-						[...Array(15)].map((_, index) => (
+						[...Array(20)].map((_, index) => (
 							<div key={index} className='flex flex-col gap-4 w-full'>
 								<div className='skeleton h-32 w-full'></div>
 								<div className='flex justify-between'>
