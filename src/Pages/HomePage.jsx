@@ -3,8 +3,8 @@ import { Search } from "lucide-react";
 import RecipeCard from "../components/RecipeCard";
 import { getRandomColor } from "../lib/utils";
 
-const APP_ID = import.meta.env.VITE_APP_ID
-const APP_KEY = import.meta.env.VITE_APP_KEY;
+const APP_ID = "d59454e5"
+const APP_KEY = "a2a3e4cbc87493f2883665548bf82a3e";
 
 const HomePage = () => {
 	const [recipes, setRecipes] = useState([]);
